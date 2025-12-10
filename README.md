@@ -7,6 +7,7 @@
 4. The weather data will be displayed in the weather information section
 5. The 5-day forecast will be displayed in the extended forecast section
 
+Github RepositoryLink : https://github.com/hrishihrishi/Weatherly---by-Hrishi
 
 # Features
 * LocalStorage
