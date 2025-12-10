@@ -208,3 +208,37 @@ function disableButtons() {
     searchBtn.disabled = true;
     currentLocationBtn.disabled = true;
 }
+
+
+
+// Update recently searched cities
+function updateRecentCities(city) {
+    let cities = JSON.parse(localStorage.getItem("recentCities")) || [];
+    if (!cities.includes(city)) {
+        cities.push(city);
+        localStorage.setItem("recentCities", JSON.stringify(cities));
+    }
+    displayRecentCities();
+}
+
+// Display recently searched cities
+function displayRecentCities() {
+    let cities = JSON.parse(localStorage.getItem("recentCities")) || [];
+    recentCities.querySelectorAll('option:not([disabled])').forEach(option => option.remove());
+
+    cities.forEach(city => {
+        const option = document.createElement("option");
+        option.value = city;
+        option.textContent = city;
+        recentCities.appendChild(option);
+    });
+}
+// Event listener for the dropdown
+recentCities.addEventListener("change", function () {
+    const selectedCity = this.value;
+    if (selectedCity) {
+        cityInput.value = selectedCity;
+        disableButtons();
+        fetchWeatherData(selectedCity);
+    }
+});
