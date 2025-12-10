@@ -1,3 +1,5 @@
+# A Weather Forecast Application built using HTML,Tailwind CSS and JavaScript. 
+
 # Setup & Usage
 1. Clone the repository
 2. Open the index.html file in a web browser
@@ -5,8 +7,6 @@
 4. The weather data will be displayed in the weather information section
 5. The 5-day forecast will be displayed in the extended forecast section
 
-# Internshala-WeatherApp-Project
-A Weather Forecast Application built using HTML,Tailwind CSS and JavaScript. 
 
 # Features
 * LocalStorage
