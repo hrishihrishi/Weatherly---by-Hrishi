@@ -72,7 +72,7 @@ async function fetchWeatherData(city) {
         } else if (error.message === "Failed to fetch") {
             showError("Network error. Please check your internet connection.");
         } else {
-            showError("An unexpected error occurred. Please try again later.");
+            showError("You have entered an invalid city name. Please enter a valid city name.");
         }
     } finally {
         enableButtons();
@@ -114,7 +114,7 @@ function displayWeatherData(data) {
 
 
 
-// Fetch extended forecast by city name
+// Fetch extended forecast by city name.
 async function fetchExtendedForecast(city) {
     try {
         const response = await fetch(`${FORECAST_URL}?q=${city}&appid=${API_KEY}&units=metric`);
