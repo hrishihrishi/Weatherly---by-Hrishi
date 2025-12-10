@@ -173,7 +173,7 @@ function clearWeatherData() {
     weatherInfo.classList.add('hidden');
 }
 
-// Clear extended forecast
+// Clears the extended forecast
 function clearExtendedForecast() {
     extendedForecast.querySelector('.flex').innerHTML = '';
     extendedForecast.classList.add('hidden');
@@ -182,7 +182,7 @@ function clearExtendedForecast() {
 
 
 
-// Show error message
+// Shows the error message
 function showError(message) {
     clearWeatherData();
     clearExtendedForecast();
@@ -190,7 +190,7 @@ function showError(message) {
     errorMsg.classList.remove('hidden');
 }
 
-// Clear error message
+// Clears the error message
 function clearError() {
     errorMsg.textContent = '';
     errorMsg.classList.add('hidden');
@@ -208,7 +208,6 @@ function disableButtons() {
     searchBtn.disabled = true;
     currentLocationBtn.disabled = true;
 }
-
 
 
 // Update recently searched cities
