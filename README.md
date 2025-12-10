@@ -24,3 +24,5 @@ Github RepositoryLink : https://github.com/hrishihrishi/Weatherly---by-Hrishi
 * Tailwind CSS
 * JavaScript
 * OpenWeatherMap API
+
+### Feel free to comment your thoughts and suggestions.
