@@ -195,3 +195,16 @@ function clearError() {
     errorMsg.textContent = '';
     errorMsg.classList.add('hidden');
 }
+
+
+
+// Enable buttons
+function enableButtons() {
+    searchBtn.disabled = false;
+    currentLocationBtn.disabled = false;
+}
+// Disable buttons
+function disableButtons() {
+    searchBtn.disabled = true;
+    currentLocationBtn.disabled = true;
+}
