@@ -178,3 +178,20 @@ function clearExtendedForecast() {
     extendedForecast.querySelector('.flex').innerHTML = '';
     extendedForecast.classList.add('hidden');
 }
+
+
+
+
+// Show error message
+function showError(message) {
+    clearWeatherData();
+    clearExtendedForecast();
+    errorMsg.textContent = message;
+    errorMsg.classList.remove('hidden');
+}
+
+// Clear error message
+function clearError() {
+    errorMsg.textContent = '';
+    errorMsg.classList.add('hidden');
+}
