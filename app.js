@@ -167,3 +167,14 @@ function displayExtendedForecast(data) {
     }
 }
 
+// Clear weather data
+function clearWeatherData() {
+    //  weatherInfo.innerHTML = '';
+    weatherInfo.classList.add('hidden');
+}
+
+// Clear extended forecast
+function clearExtendedForecast() {
+    extendedForecast.querySelector('.flex').innerHTML = '';
+    extendedForecast.classList.add('hidden');
+}
